@@ -30,7 +30,7 @@ function deleteProject(index) {
 
 function addTask(projectIndex) {
   projects[projectIndex].tasks.push({
-    name: "New Task",
+    title: "New Task",
     status: "To do",
   });
   save();
@@ -70,7 +70,7 @@ function render() {
 
       taskDiv.innerHTML = `
         <input value="${task.title}" 
-          onchange="projects[${pIndex}].tasks[${tIndex}].name = this.value; 
+          onchange="projects[${pIndex}].tasks[${tIndex}].title = this.value; 
           save();" />
         <div>
           <select onchange="projects[${pIndex}].tasks[${tIndex}].status = this.value; save();">
