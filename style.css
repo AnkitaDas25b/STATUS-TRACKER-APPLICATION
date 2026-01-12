@@ -72,7 +72,7 @@ select {
 }
 
 .tasks{
-  background-color: rgb(75, 75, 185);
+  background-color: #87CEEB;
   border-radius: 0.5rem;
   box-shadow: 4px 4px 4px;
 }
